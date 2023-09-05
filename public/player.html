@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="music-player">
+        <div class="music-player-header">
+            <h1>My Modern Music Player</h1>
+        </div>
+        <div class="music-player-controls">
+            <button class="play-button">Play</button>
+            <button class="pause-button">Pause</button>
+            <button class="skip-button">Skip</button>
+        </div>
+        <div class="music-player-progress">
+            <input type="range" class="seek-bar" min="0" max="100" value="0">
+            <span class="current-time">0:00</span>
+            <span class="total-time">0:00</span>
+        </div>
+    </div>
+    <audio src="../Assets/music1.mp3" id="audio"></audio>
+    <script src="script.js"></script>
+    <script src="navigation.js"></script>
+</body>
+</html>
